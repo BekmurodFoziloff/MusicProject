@@ -1,0 +1,12 @@
+extends layout 
+block content 
+    div 
+      li.list-group-item
+        h5 Ijrochi: #{singer}
+      li.list-group-item
+        h6 Izoh: #{music.comment}
+      //- if user
+      //-   if user.id === music.singer
+      li.list-group-item
+        a.btn.btn-warning.me-3(href="/music/edit/"+music._id)  O'zgartirish
+        button.btn.btn-danger.music_delete(type="submit", data-id = music._id)  O'chirish

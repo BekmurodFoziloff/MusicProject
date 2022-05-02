@@ -1,0 +1,14 @@
+extends layout 
+block content
+    h1.mb-5 #{title}
+    form(method="POST", action="/music/edit/"+music.id)
+        //- .mb-3
+        //-   label.form-label(for='singer') Ijrochi
+        //-   input#singer.form-control(type='text', name="singer", value=music.singer)
+        .mb-3
+         label.form-label(for='name') Musiqa nomini kiriting
+         input#name.form-control(type='text', name="name", value=music.name)
+        .mb-3
+          label.form-label(for='izoh') Izoh
+          input#izoh.form-control(type='text', name="comment", value=music.comment)
+        button.btn.btn-secondary(type='submit') O'zgartirish

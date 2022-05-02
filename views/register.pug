@@ -1,0 +1,20 @@
+extends layout 
+block content
+    h1.mb-5 #{title}
+    form(method="POST", action="/register")
+        .mb-3
+          label.form-label(for='username') Ism
+          input#username.form-control(type='text', name="username")
+        .mb-3
+          label.form-label(for='email') Email
+          input#email.form-control(type='text', name="email")
+        .mb-3
+          label.form-label(for='nickname') Taxallus
+          input#nickname.form-control(type='text', name="nickname")
+        .mb-3
+          label.form-label(for='password') Parolni kiriting
+          input#password.form-control(type='password', name="password")       
+        .mb-3
+          label.form-label(for='password2') Parolni qaytadan kiriting
+          input#password2.form-control(type='password', name="password2")       
+        button.btn.btn-info(type='submit') Ro'yxatdan o'tish

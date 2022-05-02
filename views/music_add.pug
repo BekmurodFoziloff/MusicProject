@@ -1,0 +1,14 @@
+extends layout 
+block content
+    h1.mb-5 #{title}
+    form(method="POST", action="/music/add")
+        //- .mb-3
+        //-   label.form-label(for='singer') Ijrochini kiriting
+        //-   input#singer.form-control(type='text', name="singer")
+        .mb-3
+         label.form-label(for='name') Musiqa nomini kiriting
+         input#name.form-control(type='text', name="name")
+        .mb-3
+          label.form-label(for='izoh') Izoh
+          textarea(name="comment", cols="30", rows="10")#izoh.form-control
+        button.btn.btn-secondary(type='submit') Yuborish

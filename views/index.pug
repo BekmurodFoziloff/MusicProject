@@ -1,0 +1,7 @@
+extends layout 
+block content
+    h1.mb-5 #{title}
+    ul.list-group
+        each music, i in musics
+            li.list-group-item
+                a(href="/musics/"+music._id)= music.name 
